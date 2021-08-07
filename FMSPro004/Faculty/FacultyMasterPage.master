@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FacultyMasterPage.master.cs" Inherits="Faculty_FacultyMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <!-- Favicon-->
+        
+        <link rel="icon" href="../assets/img/favicon.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="Home.aspx">FMS Dashboard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.aspx">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="Profile.aspx">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="MasterEntry.aspx">Master</a></li>
+                        <li class="nav-item"><a class="nav-link" href="AddMember.aspx">AddMember</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Payroll.aspx">Payroll</a></li>
+                        
+                       
+                        <li class="nav-item"><a class="nav-link" href="Workshop.aspx">Workshop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ChangePassowrd.aspx">Setting</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="#!">|</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">
+                        <i class="fa fa-fw fa-user"></i>
+                        <asp:Label ID="lb1" CssClass="glyphicon glyphicon-user" runat="server" Text="" style="text-transform:uppercase;color:Yellow;" font-bold="true"></asp:Label>
+                        </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../logout.aspx">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid">
+            <!-- Jumbotron Header-->
+             
+            <!-- Page Features-->
+            <div class="row text-center">
+                <div class="col-lg-12 col-md-6 mb-4">
+                   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                 </asp:ContentPlaceHolder>
+                </div>
+             
+            </div>
+            <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br />
+        </div>
+
+        
+
+         <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright © FacultyManagementSystem.com 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </div>
+    </form>
+</body>
+</html>
